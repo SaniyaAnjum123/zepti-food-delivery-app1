@@ -3,7 +3,7 @@ import './App.css';
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Register from './screens/Register';
-import Card from './components/Card';
+import Foodmenu from './components/Foodmenu.js';
 import Cart from './components/Cart';
 
 
@@ -29,6 +29,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Cart" element={<Cart />} />
+         
+
 
 
 

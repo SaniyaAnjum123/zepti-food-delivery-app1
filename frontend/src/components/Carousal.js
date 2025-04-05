@@ -6,19 +6,7 @@ export default function Carousel() {
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <ol className="carousel-indicators">
         <div class="carousel-caption d-none d-md-block" >
-        <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-  <nav class="navbar bg-body-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand"></a>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-  </div>
-</nav>
+       
       </div>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>

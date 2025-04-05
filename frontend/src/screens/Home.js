@@ -4,7 +4,7 @@ import Carousal from '../components/Carousal';
 import OfferItems from '../components/Offeritems';
 
 import Foodcategories from '../components/Foodcategories';
-import Card from '../components/Card';
+import Foodmenu from '../components/Foodmenu';
 
 
 
@@ -28,7 +28,7 @@ export default function Home() {
             {/* Food Categories */}
             <Foodcategories />
             <OfferItems />
-      <div> <Card /> </div>
+      <div> <Foodmenu /> </div>
       
  
     </div>
