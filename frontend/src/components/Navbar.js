@@ -13,7 +13,7 @@ const Navbar = ({ cart = [], setCart }) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link className="navbar-brand fs-1 fst-b" to="/">ZEPTI MARK</Link>
+            <Link className="navbar-brand fs-1 fst-b" to="/" style={{ color: 'black' }}>ZEPTI MARK</Link>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>

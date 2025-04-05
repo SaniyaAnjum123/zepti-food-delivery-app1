@@ -4,7 +4,7 @@ import Home from './screens/Home';
 import Login from './screens/Login';
 import Register from './screens/Register';
 import Foodmenu from './components/Foodmenu.js';
-import Cart from './components/Cart';
+import Cart from './context/Cart';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';

@@ -1,8 +1,7 @@
 // src/components/FoodMenu.js
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cart from './Cart';
-
+import { useCart } from '../context/CartContext'; // ✅ Import cart context
 
 const foodItems = [
     { id: 1, name: "Chicken Tikka Biryani", description: "Spreading happiness, one biryani plate at a time.", image: "/jk.jpg", price: 250 },
@@ -14,13 +13,15 @@ const foodItems = [
 
 export default function FoodMenu() {
     const [quantities, setQuantities] = useState({});
+    const { addToCart } = useCart(); // ✅ Get addToCart function from context
 
     const handleQuantityChange = (id, value) => {
         setQuantities(prev => ({ ...prev, [id]: value }));
     };
 
     const handleAddToCart = (food) => {
-        const quantity = quantities[food.id] || 1; // Default quantity is 1
+        const quantity = quantities[food.id] || 1;
+        addToCart({ ...food, quantity }); // ✅ Add food item to cart
         alert(`${food.name} added to cart with quantity ${quantity}!`);
     };
 
@@ -47,25 +48,20 @@ export default function FoodMenu() {
                                                 <option key={i + 1} value={i + 1}>{i + 1}</option>
                                             ))}
                                         </select>
-                                        <span className="fw-bold">₹{food.price * quantity}</span>
+                                        <span className="fw-bold"><span style={{ color: 'black' }}>₹</span>{food.price * quantity}</span>
                                     </div>
                                     <button className="btn btn-success mt-2 w-100" onClick={() => handleAddToCart(food)}>
                                         Add to Cart
+                                    </button>
+                                    <button className="btn btn-primary mt-2 w-100" onClick={() => alert(`Ordered ${quantity} x ${food.name}`)}>
+                                        Order Now
                                     </button>
                                 </div>
                             </div>
                         </div>
                     );
                 })}
-           
             </div>
-
-
-
-            <div><Cart cart={Cart} /></div>
-           
-
-
         </div>
     );
 }
