@@ -3,10 +3,10 @@
 # Home Page
 
 ![Demo1](./public/Demo1.png)
-![Demo3](./src/assets/Demo3.png)
-![Demo2](./src/assets/Demo2.png)
-![Demo4](./src/assets/Demo4.png)
-![Demo5](./src/assets/Demo5.png)
+![Demo3](./Demo3.png)
+![Demo2](./Demo2.png)
+![Demo4](./Demo4.png)
+![Demo5](./Demo5.png)
 
 # 🍔 Zepti - Food Delivery App (MERN Stack)
 
