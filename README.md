@@ -1,4 +1,13 @@
 #zeptimart
+# Demo
+# Home Page
+
+![Demo1](./src/assets/Demo1.png)
+![Demo3](./src/assets/Demo3.png)
+![Demo2](./src/assets/Demo2.png)
+![Demo4](./src/assets/Demo4.png)
+![Demo5](./src/assets/Demo5.png)
+
 # 🍔 Zepti - Food Delivery App (MERN Stack)
 
 A full-stack food delivery web application built with the MERN stack (MongoDB, Express.js, React, Node.js). Users can browse restaurants, view menus, add items to a cart, and place orders — all in a smooth, responsive experience.
