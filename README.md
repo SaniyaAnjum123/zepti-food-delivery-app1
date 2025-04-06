@@ -1,12 +1,5 @@
 # zeptimart
-## Demo
-### Home Page
 
-![Demo1](./public/Demo1.png)
-![Demo3](./public/Demo3.png)
-![Demo2](./public/Demo2.png)
-![Demo4](./public/Demo4.png)
-![Demo5](./public/Demo5.png)
 
 
 
