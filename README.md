@@ -2,7 +2,7 @@
 # Demo
 # Home Page
 
-![Demo1](./src/assets/Demo1.png)
+![Demo1](./public/Demo1.png)
 ![Demo3](./src/assets/Demo3.png)
 ![Demo2](./src/assets/Demo2.png)
 ![Demo4](./src/assets/Demo4.png)
