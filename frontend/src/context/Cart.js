@@ -4,7 +4,7 @@ import './Cart.css';
 import { useCart } from './CartContext'; // Ensure the file is named CartContext.js
 
 export default function Cart() {
-    const { cart } = useCart();
+    const { cart, addToCart, removeFromCart } = useCart();
 
     if (!Array.isArray(cart)) return null;
 
@@ -21,6 +21,10 @@ export default function Cart() {
                                 <span className="item-name">{item.name}</span>
                                 <span className="item-quantity">x{item.quantity}</span>
                                 <span className="item-price">₹{item.price * item.quantity}</span>
+                                <div className="item-actions">
+                                    <button onClick={() => addToCart({ ...item, quantity: 1 })}>+</button>
+                                    <button onClick={() => removeFromCart(item.id)}>-</button>
+                                </div>
                             </li>
                         ))}
                     </ul>
